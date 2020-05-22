@@ -75,14 +75,7 @@ function createMap(earthquakes){
         zoom: 5,
         layers: [streetmap, earthquakes]
     });
-    //create and add legend to map
-    // var legend= L.control({position: 'bottomright'});
-    
-//     legend.onAdd = function() {
-//         var div = LDomUtil.create('div', 'info legend')
-// //div.innerHTML = "<h3>Magnitude Legend</h3><table><tr><th>>= 4 </th><td>Red"
-//         return div;
-//     };
+ 
 
     L.control.layers(baseMaps, overlayMaps, {
         collapsed: false
